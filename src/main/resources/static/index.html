@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Docker Chat App</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+
+<div id="username-section">
+    <form id="usernameForm" name="usernameForm">
+        <div>
+            <input id="username" type="text" placeholder="Input username..."/>
+            <button type="submit">Start chatting</button>
+        </div>
+    </form>
+</div>
+
+
+<div id="chat-section" class="hidden">
+    <div>
+        <h2>Chat</h2>
+    </div>
+
+    <div id="error-message" class="hidden">
+    </div>
+
+    <ul id="chat-block">
+    </ul>
+
+    <form id="messageForm" name="messageForm">
+        <div>
+            <div>
+                <input id="message" type="text" placeholder="Write a message..."/>
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

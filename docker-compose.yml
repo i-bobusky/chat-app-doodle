@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+  chat-app-doodle:
+    build:
+      context: .
+    restart: on-failure
+    ports:
+      - 8080:8080
